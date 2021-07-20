@@ -6,11 +6,13 @@ var bodyParser = require('body-parser');
  
 const db = require('./app/config/db.config.js');
 const Customer = db.Customer;
+const History = db.History;
 
 // force: true will drop the table if it already exists
-db.sequelize.sync({force: true}).then(() => {
+db.sequelize.sync().then(() => {
   console.log('Drop and Resync with { force: true }');
   Customer.sync().then(() => {});
+  History.sync().then(() => {});
 }); 
 
 let router = require('./app/routers/router.js');
