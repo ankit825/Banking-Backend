@@ -10,11 +10,11 @@ const env = {
   native: true,
   dialectOptions: {
     ssl: {
-      require: true,
+      
       rejectUnauthorized: false
     }
   },
-  ssl: true,
+  
   pool: {
     max: 5,
     min: 0,
