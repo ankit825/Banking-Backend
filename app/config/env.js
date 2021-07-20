@@ -13,6 +13,7 @@ const env = {
       rejectUnauthorized: false
     }
   },
+  ssl: true,
   pool: {
     max: 5,
     min: 0,
