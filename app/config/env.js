@@ -7,6 +7,12 @@ const env = {
   host: 'ec2-52-202-152-4.compute-1.amazonaws.com',
   port: 5432,
   dialect: 'postgres',
+  dialectOptions: {
+    ssl: {
+      require: true,
+      rejectUnauthorized: false
+    }
+  },
   pool: {
     max: 5,
     min: 0,
