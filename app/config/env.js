@@ -10,7 +10,7 @@ const env = {
   dialectOptions: {
     ssl: {
       require: true,
-      rejectUnauthorized: false
+      
     }
   },
   ssl: true,
