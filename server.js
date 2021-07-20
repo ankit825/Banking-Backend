@@ -21,7 +21,7 @@ app.use(bodyParser.json());
 app.use('/', router);
 
 // Create a Server
-const server = app.listen(8080, function () {
+const server = app.listen(process.env.PORT || 5000, function () {
  
   let host = server.address().address
   let port = server.address().port
