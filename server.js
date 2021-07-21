@@ -18,7 +18,8 @@ db.sequelize.sync().then(() => {
 let router = require('./app/routers/router.js');
 const cors = require("cors");
 const corsOptions = {
-  origin: "https://ankitbanking.herokuapp.com",
+  //origin: "https://ankitbanking.herokuapp.com",
+  origin: "http://localhost:3000",
   optionsSuccessStatus: 200,
 };
 app.use(cors(corsOptions));
